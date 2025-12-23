@@ -7,6 +7,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 ## 🎯 What This App Does
 
 **The app automatically generates:**
+
 - ✅ Content ideas and scripts
 - ✅ Instagram captions
 - ✅ Hashtags
@@ -14,6 +15,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 - ✅ Avatar dialogue scripts
 
 **You need to do manually (outside the app):**
+
 - 🔧 Create videos/visuals
 - 🔧 Edit videos
 - 🔧 Post to Instagram
@@ -26,6 +28,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 1: Install the App
 
 **What you do:**
+
 1. Make sure you have Python 3.8 or higher installed
 2. Open a terminal/command prompt
 3. Navigate to the project folder:
@@ -39,7 +42,7 @@ Welcome! This guide will walk you through everything you need to know to use the
    ```
 5. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
 **Status:** ✅ Setup complete
@@ -49,6 +52,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 2: Get Your API Key
 
 **What you do:**
+
 1. Choose an AI provider:
    - **OpenAI**: Go to https://platform.openai.com/api-keys (create account if needed)
    - **Anthropic**: Go to https://console.anthropic.com/ (create account if needed)
@@ -67,12 +71,15 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 3: Start the App
 
 **What you do:**
+
 1. Open a terminal/command prompt
 2. Navigate to the project folder
 3. Start the backend server:
+
    ```bash
    ./run_backend.sh
    ```
+
    Or if that doesn't work:
    ```bash
    uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
@@ -87,6 +94,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 4: Configure API Settings (First Time Only)
 
 **What you do in the app:**
+
 1. At the top of the page, find the "API Key" field
 2. Paste your API key (from Step 2)
 3. Select your API model from the dropdown:
@@ -102,21 +110,24 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 5: Generate Your Content
 
 **What you do in the app:**
+
 1. **Enter a topic** in the "Topic" field
+
    - Example: "Productivity tips for entrepreneurs"
    - Example: "5 ways to grow your Instagram following"
    - Be specific - better topics = better content
-
 2. **Select content type** from the dropdown:
+
    - **Reel**: Short video script (25 seconds) - best for reach
    - **Carousel**: Multi-slide post content - great for educational content
    - **Story**: Story content - quick updates
    - **Post**: Regular post content - traditional format
-
 3. **Click "Generate Content"**
+
    - Wait 10-30 seconds while the AI creates your content
 
 **What the app does automatically:**
+
 - ✅ Generates a content idea based on your topic
 - ✅ Creates a script (for Reels) or content (for Carousels)
 - ✅ Generates 3 caption options with emojis
@@ -131,6 +142,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 ### Step 6: Review and Copy Generated Content
 
 **What you see in the app:**
+
 - **Script**: The main content/script for your post
 - **Caption**: Ready-to-use Instagram caption with emojis (usually use the first one)
 - **Hashtags**: 10-12 relevant hashtags (comma-separated)
@@ -138,6 +150,7 @@ Welcome! This guide will walk you through everything you need to know to use the
 - **Avatar Dialogue**: Script formatted for AI avatar videos (if applicable)
 
 **What you do:**
+
 1. Review each section
 2. **Copy the content** you want to use:
    - Select the text
@@ -152,12 +165,14 @@ Welcome! This guide will walk you through everything you need to know to use the
 
 **What you see in the app:**
 Below the generated content, there's a checklist showing:
+
 - ✅ **Completed**: Tasks the app completed automatically
 - ⏳ **Pending**: Tasks not yet done
 - ❌ **Failed**: Tasks that encountered errors
 - 🔧 **Manual**: Tasks you need to do manually
 
 **What you do:**
+
 - Click **"Mark Manual"** if automation didn't work and you'll do it yourself
 - Click **"Mark Complete"** when you've finished that task
 
@@ -174,6 +189,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 8: Create Voiceover (For Reels with Avatar)
 
 **What you do manually:**
+
 1. **Copy the script** from the app (Step 6)
 2. **Go to a TTS (Text-to-Speech) service:**
    - **TTSMaker**: https://ttsmaker.com/ (free)
@@ -184,8 +200,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 5. **Download the MP3 audio file**
 6. **Save it** for later use
 
-**Tool:** TTSMaker / ElevenLabs Free / Narakeet  
-**Time:** 5-10 minutes  
+**Tool:** TTSMaker / ElevenLabs Free / Narakeet
+**Time:** 5-10 minutes
 **Status:** 🔧 Manual task - mark as complete in checklist when done
 
 ---
@@ -193,6 +209,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 9: Get Stock Footage (Optional, for Reels)
 
 **What you do manually:**
+
 1. **Go to a stock footage site:**
    - **Pexels**: https://www.pexels.com/videos/ (free)
    - **Pixabay**: https://pixabay.com/videos/ (free)
@@ -201,8 +218,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 3. **Download free commercial videos**
 4. **Save them** for video editing
 
-**Tool:** Pexels / Pixabay / Mixkit  
-**Time:** 10-15 minutes  
+**Tool:** Pexels / Pixabay / Mixkit
+**Time:** 10-15 minutes
 **Status:** 🔧 Manual task - optional, mark as complete when done
 
 ---
@@ -210,6 +227,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 10: Get Music/Sound Effects (Optional, for Reels)
 
 **What you do manually:**
+
 1. **Go to a music library:**
    - **YouTube Audio Library**: https://www.youtube.com/audiolibrary (free, copyright-free)
    - **Instagram Music**: Available in Instagram app (trending audio)
@@ -217,8 +235,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 3. **Select appropriate track** for your content
 4. **Download or note the track name**
 
-**Tool:** YouTube Audio Library / Instagram Music  
-**Time:** 5-10 minutes  
+**Tool:** YouTube Audio Library / Instagram Music
+**Time:** 5-10 minutes
 **Status:** 🔧 Manual task - optional, mark as complete when done
 
 ---
@@ -226,6 +244,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 11: Build Avatar Video (For AI Avatar Reels)
 
 **What you do manually:**
+
 1. **Take a clear portrait photo** (front-facing, good lighting)
 2. **Go to an AI avatar service:**
    - **HeyGen Free**: https://www.heygen.com/ (free tier)
@@ -237,8 +256,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 6. **Generate video**
 7. **Export as 1080x1920 MP4** (Instagram Reels format)
 
-**Tool:** HeyGen Free / CapCut AI Avatar / Pika Labs  
-**Time:** 10-15 minutes  
+**Tool:** HeyGen Free / CapCut AI Avatar / Pika Labs
+**Time:** 10-15 minutes
 **Status:** 🔧 Manual task - mark as complete when done
 
 ---
@@ -246,6 +265,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 12: Design Assets (For Carousels)
 
 **What you do manually:**
+
 1. **Go to Canva**: https://www.canva.com/ (free)
 2. **Use the generated carousel content** from the app (Step 6)
 3. **Create slides in Canva:**
@@ -255,8 +275,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 4. **Design thumbnails/graphics** if needed
 5. **Export images** (download as JPG or PNG)
 
-**Tool:** Canva Free  
-**Time:** 15-30 minutes  
+**Tool:** Canva Free
+**Time:** 15-30 minutes
 **Status:** 🔧 Manual task - mark as complete when done
 
 ---
@@ -264,6 +284,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 13: Edit Video (For Reels)
 
 **What you do manually:**
+
 1. **Open CapCut**: https://www.capcut.com/ (free, desktop or web)
 2. **Import your content:**
    - Avatar video (from Step 11) OR stock footage (from Step 9)
@@ -277,8 +298,8 @@ Now you have the text content. Next, you need to create the visual/audio content
    - Keep under 30 seconds
 4. **Export as 1080x1920 MP4** (Instagram Reels format)
 
-**Tool:** CapCut (Desktop/Web)  
-**Time:** 20-30 minutes  
+**Tool:** CapCut (Desktop/Web)
+**Time:** 20-30 minutes
 **Status:** 🔧 Manual task - mark as complete when done
 
 ---
@@ -288,6 +309,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 14: Upload Post to Instagram
 
 **What you do manually:**
+
 1. **Open Instagram** (app or web)
 2. **Click the "+" button** to create a new post
 3. **Upload your content:**
@@ -300,8 +322,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 5. **Post during peak times** (see timing guide below)
 6. **Click "Share"**
 
-**Tool:** Instagram App/Web  
-**Time:** 5 minutes  
+**Tool:** Instagram App/Web
+**Time:** 5 minutes
 **Status:** 🔧 Manual task - mark as complete in checklist when done
 
 ---
@@ -309,14 +331,15 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 15: Share to Story
 
 **What you do manually:**
+
 1. **Immediately after posting**, go to your post
 2. **Click the "Share" button** (paper airplane icon)
 3. **Select "Add post to your story"**
 4. **Add an engaging sticker or text**
 5. **Share to your story**
 
-**Tool:** Instagram App  
-**Time:** 2 minutes  
+**Tool:** Instagram App
+**Time:** 2 minutes
 **Status:** 🔧 Manual task - mark as complete in checklist when done
 
 ---
@@ -324,13 +347,14 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 16: Engage with Audience
 
 **What you do manually:**
+
 1. **Within 15 minutes of posting**, reply to the first 5-10 comments
 2. **Reply to DMs** if you receive any
 3. **Spend 20 minutes engaging** with your audience
 4. **Like and respond** to comments on your post
 
-**Tool:** Instagram App  
-**Time:** 20 minutes  
+**Tool:** Instagram App
+**Time:** 20 minutes
 **Status:** 🔧 Manual task - mark as complete in checklist when done
 
 ---
@@ -338,6 +362,7 @@ Now you have the text content. Next, you need to create the visual/audio content
 ### Step 17: Track Metrics
 
 **What you do manually:**
+
 1. **Wait 24-48 hours** after posting
 2. **Go to Instagram Insights** (or use Metricool Free)
 3. **Monitor metrics:**
@@ -348,8 +373,8 @@ Now you have the text content. Next, you need to create the visual/audio content
 4. **Note what worked** and what didn't
 5. **Use insights** for future content
 
-**Tool:** Instagram Insights / Metricool Free  
-**Time:** 10 minutes  
+**Tool:** Instagram Insights / Metricool Free
+**Time:** 10 minutes
 **Status:** 🔧 Manual task - mark as complete in checklist when done
 
 ---
@@ -363,31 +388,32 @@ These are ongoing tasks you should do weekly to improve your content:
 **What you do manually:**
 
 1. **Analyze Top-Performing Posts** 🔧
+
    - Review engagement metrics from the past week
    - Identify patterns in successful content
    - Note what topics/format worked best
-
 2. **Research Trending Reels Audio** 🔧
+
    - Browse Instagram Reels
    - Note trending audio tracks
    - Save them for future use
-
 3. **Collaborate with Creators** 🔧
+
    - Reach out to small creators in your niche
    - Plan collaborations
    - Cross-promote content
-
 4. **Update Hashtags List** 🔧
+
    - Research new relevant hashtags
    - Update your hashtag strategy
    - Test new hashtag combinations
-
 5. **Refresh Avatar/Voice** 🔧 (If using AI avatar)
+
    - Update avatar appearance if needed
    - Adjust voice settings if needed
    - Keep content fresh
 
-**Time:** 1-2 hours per week  
+**Time:** 1-2 hours per week
 **Status:** 🔧 Manual tasks
 
 ---
@@ -396,21 +422,22 @@ These are ongoing tasks you should do weekly to improve your content:
 
 Post during these times for best engagement:
 
-| Day | Content Type | Time | Purpose |
-|-----|-------------|------|---------|
-| Monday | Carousel | 11 AM | Educational content |
-| Tuesday | Reel | 7 PM | Boost reach |
-| Wednesday | Story | 12 PM, 9 PM | Engage followers |
-| Thursday | Reel | 6 PM | Build trust |
-| Friday | Carousel | 11 AM | Save-worthy post |
-| Saturday | Reel | 1 PM | Lighter tone |
-| Sunday | Story | 10 AM, 8 PM | Strengthen community |
+| Day       | Content Type | Time        | Purpose              |
+| --------- | ------------ | ----------- | -------------------- |
+| Monday    | Carousel     | 11 AM       | Educational content  |
+| Tuesday   | Reel         | 7 PM        | Boost reach          |
+| Wednesday | Story        | 12 PM, 9 PM | Engage followers     |
+| Thursday  | Reel         | 6 PM        | Build trust          |
+| Friday    | Carousel     | 11 AM       | Save-worthy post     |
+| Saturday  | Reel         | 1 PM        | Lighter tone         |
+| Sunday    | Story        | 10 AM, 8 PM | Strengthen community |
 
 ---
 
 ## 📊 Quick Reference: Complete Workflow
 
 ### For a Reel:
+
 1. ✅ **App:** Generate idea, script, caption, hashtags, alt text, avatar dialogue
 2. 🔧 **You:** Create voiceover (TTSMaker/ElevenLabs)
 3. 🔧 **You:** Get stock footage (Pexels/Pixabay) - optional
@@ -423,6 +450,7 @@ Post during these times for best engagement:
 10. 🔧 **You:** Track metrics
 
 ### For a Carousel:
+
 1. ✅ **App:** Generate idea, carousel content, caption, hashtags, alt text
 2. 🔧 **You:** Design slides (Canva)
 3. 🔧 **You:** Upload to Instagram
@@ -435,17 +463,20 @@ Post during these times for best engagement:
 ## 💡 Tips for Best Results
 
 ### Writing Good Topics
+
 - **Be specific:** "5 morning routines" is better than "routines"
 - **Include your niche:** "Productivity tips for entrepreneurs"
 - **Think about your audience:** What would they want to see?
 
 ### Choosing Content Types
+
 - **Reels:** Best for reach and engagement
 - **Carousels:** Great for educational content, saves
 - **Stories:** Quick updates, behind-the-scenes
 - **Posts:** Traditional content, longer captions
 
 ### Using Generated Content
+
 - **Scripts:** Use as-is or edit to match your voice
 - **Captions:** Add personal touches, your own emojis
 - **Hashtags:** Mix with your own niche hashtags
@@ -456,18 +487,22 @@ Post during these times for best engagement:
 ## 🆘 Troubleshooting
 
 ### "Failed to load configuration"
+
 - **Problem:** Backend server isn't running
 - **Solution:** Go back to Step 3 and start the backend server
 
 ### "Content creation failed"
+
 - **Problem:** API key might be invalid or expired
 - **Solution:** Check your API key, ensure you have credits/quota
 
 ### "CORS error" in browser console
+
 - **Problem:** Browser blocking requests
 - **Solution:** Make sure backend is running on `http://localhost:8000`
 
 ### Generated content seems off
+
 - **Problem:** Topic might be too vague
 - **Solution:** Be more specific in your topic description
 
@@ -476,6 +511,7 @@ Post during these times for best engagement:
 ## ✅ Summary
 
 **What the app does automatically:**
+
 - ✅ Idea generation
 - ✅ Script/content creation
 - ✅ Caption generation
@@ -484,6 +520,7 @@ Post during these times for best engagement:
 - ✅ Avatar dialogue formatting
 
 **What you do manually:**
+
 - 🔧 Create voiceover (TTS)
 - 🔧 Build avatar video
 - 🔧 Edit video
@@ -512,8 +549,7 @@ Post during these times for best engagement:
 **Happy creating! 🚀**
 
 For more details, see:
+
 - `USER_GUIDE.md` - Detailed usage instructions
 - `manual_tasks.md` - Complete list of manual tasks
 - `DEVELOPER_GUIDE.md` - Technical setup guide
-
-
