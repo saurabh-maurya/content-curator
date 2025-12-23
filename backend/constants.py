@@ -17,7 +17,9 @@ AVAILABLE_MODELS = [
     "gpt-3.5-turbo",
     "claude-3-5-sonnet-20241022",
     "claude-3-opus-20240229",
-    "gemini-pro",
+    "gemini-1.5-flash",  # Recommended for free tier - fast and efficient
+    "gemini-1.5-pro",    # More capable, may have stricter rate limits on free tier
+    "gemini-pro",        # Legacy model (deprecated, use gemini-1.5-flash instead)
 ]
 
 # Trending Instagram Profiles (same genre) - for content inspiration
